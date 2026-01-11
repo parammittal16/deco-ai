@@ -1,0 +1,49 @@
+/* Global Design Tokens */
+:root {
+  /* Colors - Primary (Violet/Blue for AI) */
+  --ai-color-primary-50: #efeeff;
+  --ai-color-primary-100: #e0dfff;
+  --ai-color-primary-500: #6366f1;
+  --ai-color-primary-600: #4f46e5;
+  --ai-color-primary-700: #4338ca;
+
+  /* Colors - Surface */
+  --ai-color-surface-white: #ffffff;
+  --ai-color-surface-100: #f3f4f6;
+  --ai-color-surface-200: #e5e7eb;
+  --ai-color-surface-800: #1f2937;
+  --ai-color-surface-900: #111827;
+
+  /* Colors - Text */
+  --ai-color-text-main: #111827;
+  --ai-color-text-muted: #6b7280;
+  --ai-color-text-inverted: #ffffff;
+
+  /* Spacing */
+  --ai-space-1: 4px;
+  --ai-space-2: 8px;
+  --ai-space-3: 12px;
+  --ai-space-4: 16px;
+  --ai-space-6: 24px;
+  --ai-space-8: 32px;
+
+  /* Radius */
+  --ai-radius-sm: 4px;
+  --ai-radius-md: 8px;
+  --ai-radius-lg: 12px;
+  --ai-radius-full: 9999px;
+
+  /* Transitions */
+  --ai-transition-fast: 150ms ease;
+  --ai-transition-normal: 250ms ease;
+}
+
+/* Dark Mode Support (Basic) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ai-color-surface-white: #1f2937;
+    --ai-color-surface-100: #111827;
+    --ai-color-text-main: #f9fafb;
+    --ai-color-text-muted: #9ca3af;
+  }
+}

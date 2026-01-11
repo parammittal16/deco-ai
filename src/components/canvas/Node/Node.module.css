@@ -1,0 +1,73 @@
+.node {
+    position: absolute;
+    min-width: 200px;
+    background: var(--ai-color-surface-white);
+    border: 1px solid var(--ai-color-surface-200);
+    border-radius: var(--ai-radius-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--ai-transition-fast), border-color var(--ai-transition-fast);
+}
+
+.selected {
+    border-color: var(--ai-color-primary-500);
+    box-shadow: 0 0 0 2px var(--ai-color-primary-500);
+}
+
+.header {
+    padding: var(--ai-space-2) var(--ai-space-3);
+    border-bottom: 1px solid var(--ai-color-surface-200);
+    background: var(--ai-color-surface-100);
+    border-radius: var(--ai-radius-lg) var(--ai-radius-lg) 0 0;
+    font-weight: 600;
+    color: var(--ai-color-text-main);
+    font-size: 14px;
+}
+
+.body {
+    padding: var(--ai-space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ai-space-2);
+}
+
+.portRow {
+    display: flex;
+    align-items: center;
+    gap: var(--ai-space-2);
+    font-size: 12px;
+    color: var(--ai-color-text-muted);
+}
+
+.portRowEnd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--ai-space-2);
+    font-size: 12px;
+    color: var(--ai-color-text-muted);
+}
+
+.port {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--ai-color-surface-200);
+    border: 1px solid var(--ai-color-surface-800);
+    cursor: crosshair;
+}
+
+.port:hover {
+    background: var(--ai-color-primary-500);
+}
+
+.portInput {
+    margin-left: -18px;
+    /* Pull outside left */
+}
+
+.portOutput {
+    margin-right: -18px;
+    /* Pull outside right */
+}
